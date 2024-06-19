@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/ticSel.css">
+    <title>票種選擇</title>
+</head>
+<body>
+    
+    <!-- Header Load -->
+    <div class="header-page"></div>
+
+    <main>
+
+        <!-- 回頂部按鈕 -->
+        <img class="goHome" src="./img/goHome.png" alt="">
+
+        <!-- -----------------------導航列----------------------- -->
+
+        <nav class="pageDiv">
+            <div class="pageSelect">
+                <a href="index.html">首頁</a>
+                <a href="javascript:;" class="selected">電影</a>
+                <a href="javascript:;">演唱會表演</a>
+                <a href="javascript:;">展覽課程講座</a>
+                <a href="javascript:;">旅遊住宿美食</a>
+            </div>
+        </nav>
+
+        <div class="outer">
+            <div class="swiper myNav">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="javascript:;" class="selected">首頁</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="javascript:;">電影</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="javascript:;">演唱會表演</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="javascript:;">展覽課程講座</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="javascript:;">旅遊住宿美食</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- -----------------------主內容----------------------- -->
+        
+        <div class="selContain">
+
+            <!-- 優惠訊息 -->
+            <div class="discount">
+                <h2>優惠活動</h2>
+                <p>單人套票305元：內含電影交換券一張，並贈送「 電影上映紀念卡B款」一張。<br>雙人套票610元：內含電影交換券兩張，並贈送「 27彈專屬紀念徽章」一枚及「 電影上映紀念卡A款 」一張。<br>※6/17起陸續出貨</p>    
+            </div>
+
+            <!-- 票種選擇 -->
+            <div class="programName">節目名稱：《名偵探柯南100萬美元的五稜星》電影預售票</div>
+            <div class="programLittleName">節目名稱<br>《名偵探柯南100萬美元的五稜星》電影預售票</div>
+            <div class="table">
+                <div class="location">
+                    <h3>演出地點</h3>
+                    <p>全台首輪上映戲院</p>
+                </div>
+                <div class="date">
+                    <h3>演出日期與時間</h3>
+                    <p>2024/06/28 00:00 至 2024/07/05 23:59</p>
+                </div>
+                <div class="order">
+                    <h3>快速訂位</h3>
+                    <div class="ticSel">
+                        <p class="tic">套票種類<i class="bi bi-caret-down-fill"></i></p>
+                        <p class="num">區名/票價/剩餘數量<i class="bi bi-caret-down-fill"></i></p>
+                        <p class="type">票種<i class="bi bi-caret-down-fill"></i></p>
+                        <p class="people">人數<i class="bi bi-caret-down-fill"></i></p>
+                    </div>
+                </div>
+                <div class="del">
+                    <h3></h3>
+                    <p><i class="bi bi-trash"></i>刪除</p>
+                </div>
+            </div>
+
+            <!-- 新增購買 -->
+            <div class="addBtn">
+                <a href="javascript:;"><i class="bi bi-plus-square"></i> 新增購買</a>
+            </div>
+
+            <!-- 確定購買 -->
+            <div class="confirmBtn">
+                <a href="javascript:;">確定購買</a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer Load -->
+    <div class="footer-page"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./js/script.js"></script>
+
+<script>
+    var swiper = new Swiper(".myNav", {
+        slidesPerView: 'auto',
+    });
+</script>
+
+</body>
+</html>

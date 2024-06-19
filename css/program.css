@@ -1,0 +1,657 @@
+@import url('reset.css');
+
+main{
+    max-width: 1440px;
+    min-width: 390px;
+    margin: 0 auto;
+    background-color: #022F40;
+    color: #ffffff;
+    font-size: 14px;
+    padding-bottom: 1px;
+    box-sizing: border-box;
+}
+
+.goHome{
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    z-index: 100;
+}
+
+/* -----------------------導航列----------------------- */
+
+.pageDiv{
+    padding-top: 32px;
+    margin-bottom: 32px;
+    box-sizing: border-box;
+}
+
+.pageSelect{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 70px;
+    display: flex;
+}
+
+.pageSelect a{
+    width: 20%;
+    height: 35px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    white-space: nowrap;
+}
+
+.pageSelect .selected{
+    background-color: #92D2DD;
+    border-radius: 4px 4px 0 0;
+    color: #000;
+}
+
+.pageSelect a:nth-child(1):hover{
+    background-color: #4A818E;
+    border-radius: 4px 4px 0 0;
+}
+.pageSelect a:nth-child(3):hover{
+    background-color: #4A818E;
+    border-radius: 4px 4px 0 0;
+}
+.pageSelect a:nth-child(4):hover{
+    background-color: #4A818E;
+    border-radius: 4px 4px 0 0;
+}
+.pageSelect a:nth-child(5):hover{
+    background-color: #4A818E;
+    border-radius: 4px 4px 0 0;
+}
+
+.outer{
+    display: none;
+}
+
+/* -----------------------主內容----------------------- */
+
+.mainContain{
+    height: auto;
+    padding: 0 70px;
+    padding-bottom: 1px;
+    box-sizing: border-box;
+}
+
+/* 大綱 */
+.int{
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.int img{
+    width: 350px;
+    margin-right: 48px;
+}
+
+.rContain{
+    width: 100%;
+    height: 350px;
+}
+
+.rContain h1{
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.intContain{
+    width: 100%;
+    display: flex;
+}
+
+.text01{
+    height: 314px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 36px;
+    justify-content: space-between;
+}
+
+.text01 p{}
+
+
+.text02{
+    height: 314px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text02 p{}
+
+.text03{
+    display: flex;
+}
+
+.text03 p{}
+
+.price{
+    color: red;
+}
+
+.btn{
+    margin-left: auto;
+    margin-top: auto;
+    width: 228px;
+    height: 51px;
+}
+
+.btn a{
+    display: block;
+    text-align: center;
+    line-height: 51px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    background-color: #EED65A;
+    border-radius: 12px;
+}
+
+.discount{
+    margin-bottom: 48px;
+}
+
+.discount h2{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.discount p{
+    line-height: 17px;
+}
+
+.littleBtn{
+    display: none;
+}
+
+.littleBtn a{
+    display: block;
+    width: 175px;
+    height: 29px;
+    background-color: #EED65A;
+    border-radius: 8px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #000;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/* 介紹選單 */
+.detialMenu{
+    padding: 16px 0;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    background-color: #022F40;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+.detialMenu a{
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* 劇情簡介 */
+.contain{
+    border-top: 2px solid #4DB8C0;
+    margin-bottom: 48px;
+    padding: 32px 0;
+}
+
+.contain h2{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.contain p{
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.video iframe{
+    width: 720px;
+    height: 405px;
+}
+
+.crew01{
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.crew01 h3{
+    font-size: 16px;
+}
+
+.crew01 p{}
+
+.crew02{
+    line-height: 24px;
+}
+
+.crew02 h3{
+    font-size: 16px;
+}
+
+.crew02 p{
+    margin: 0;
+}
+
+/* 關於電影 */
+.about{
+    border-top: 2px solid #4DB8C0;
+    margin-bottom: 48px;
+    padding: 32px 0;
+}
+
+.about h2{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.about p{
+    line-height: 24px;
+}
+
+/* 網友期待度 */
+.star{
+    border-top: 2px solid #4DB8C0;
+    margin-bottom: 48px;
+    padding: 32px 0;
+}
+
+.star h2{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.star h3{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.star01{
+    display: flex;
+    margin-bottom: 32px;
+    line-height: 24px;
+    justify-content: center;
+    gap: 8px;
+}
+
+.fraction{
+    font-size: 24px;
+}
+
+.give{
+    font-size: 12px;
+}
+
+.ratings1{
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ddd;
+    overflow: hidden;
+    font-size: 24px;
+}
+.full_star1{
+    width: 92%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #FFFF00;
+}
+
+.star02{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.empty_star2{
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.ratings2{}
+
+.star02 a{
+    display: block;
+    text-align: center;
+    line-height: 33px;
+    text-decoration: none;
+    color: #000;
+    background-color: #EED65A;
+    width: 92px;
+    height: 33px;
+    border-radius: 8px;
+}
+
+/* 使用說明 */
+.howToUseTicket{
+    border-top: 2px solid #4DB8C0;
+    margin-bottom: 48px;
+    padding: 32px 0;
+}
+
+.howToUseTicket h2{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.howToUseTicket p{
+    line-height: 24px;
+}
+
+/* 購票須知 */
+.howToBuyTicket{
+    border-top: 2px solid #4DB8C0;
+    margin-bottom: 60px;
+    padding: 32px 0;
+}
+
+.howToBuyTicket h2{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.howToBuyTicket p{
+    line-height: 24px;
+}
+
+
+
+
+
+
+/* -------------------program RWD------------------ */
+
+/* --- Break 1024px --- */
+@media screen and (max-width: 1024px) {
+    .pageDiv{
+        padding-top: 24px;
+        margin-bottom: 24px;
+    }
+    .pageSelect{
+        padding: 0 48px;
+    }
+
+    .mainContain{
+        padding: 0 48px;
+    }
+
+    .int{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        margin-bottom: 40px;
+    }
+    .int img{
+        width: 350px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+    .rContain{
+        height: 287px;
+    }
+    .text01{
+        height: 254px;
+        margin-right: 40px;
+    }
+    .text02{
+        height: 254px;
+    }
+}
+
+/* --- Break 736px --- */
+@media screen and (max-width: 736px) {
+    .pageDiv{
+        padding-top: 21px;
+        margin-bottom: 21px;
+    }
+    .pageSelect{
+        padding: 0 32px;
+    }
+    .pageSelect a{
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .mainContain{
+        padding: 0 21px;
+    }
+
+    .video{
+    position: relative;
+    width: 100%;
+    height: 0;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    padding-bottom: 56.25%;
+    }
+
+    .video iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    }
+}
+
+/* --- Break 600px --- */
+@media screen and (max-width: 600px) {
+    .detialMenu{
+        padding: 8px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+    .detialMenu a{
+        margin: 0;
+        text-align: center;
+        width: 33%;
+        line-height: 24px;
+        font-size: 14px;
+    }
+}
+
+/* --- Break 500px --- */
+@media screen and (max-width: 500px) {
+    .pageDiv{
+        display: none;
+    }
+    .outer{
+        display: block;
+        width: 100%;
+        padding-top: 16px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #1F505F;
+    }
+    .myNav{
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .myNav .swiper-slide{
+        width: auto;
+    }
+    .myNav .swiper-slide:not(:last-child){
+        margin-right: 20px;
+    }
+    .myNav .swiper-slide a{
+        display: block;
+        text-decoration: none;
+        font-size: 14px;
+        color: #ffffff;
+        text-align: left;
+        white-space: nowrap;
+    }
+    .myNav .swiper-slide .selected{
+        border-bottom: 2px solid #92D2DD;
+    }
+
+    .mainContain{
+        padding: 0 16px;
+    }
+
+    .int{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        margin-bottom: 24px;
+    }
+    .int img{
+        width: 350px;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+    .rContain{
+        height: 236px;
+    }
+    .rContain h1{
+        font-size: 14px;
+    }
+    .intContain{
+        font-size: 12px;
+    }
+    .text01{
+        height: 204px;
+        margin-right: 44px;
+    }
+    .text02{
+        height: 204px;
+    }
+    .btn{
+        display: none;
+    }
+    .littleBtn{
+        display: block;
+    }
+
+    .discount h2{
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    .discount p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .contain{
+        margin-bottom: 32px;
+        padding: 16px 0;
+    }
+    .contain h2{
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .contain p{
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+    .video{
+        margin-bottom: 16px;
+    }
+    .crew01 h3{
+        font-size: 14px;
+    }
+    .contain p{
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+    .crew02 h3{
+        font-size: 14px;
+    }
+    .crew02 p{
+        font-size: 12px;
+    }
+
+    .about{
+        margin-bottom: 32px;
+        padding: 16px 0;
+    }
+    .about h2{
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .about p{
+        font-size: 12px;
+    }
+
+    .star{
+        margin-bottom: 32px;
+        padding: 16px 0;
+    }
+    .star h2{
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .star01{
+        margin-bottom: 16px;
+    }
+    .give{
+        font-size: 10px;
+    }
+    .star h3{
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    .star02 a{
+        width: 80px;
+        height: 28px;
+        line-height: 28px;
+    }
+
+    .howToUseTicket{
+        margin-bottom: 32px;
+        padding: 16px 0;
+    }
+    .howToUseTicket h2{
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .howToUseTicket p{
+        font-size: 12px;
+    }
+
+    .howToBuyTicket{
+        margin-bottom: 48px;
+        padding: 16px 0;
+    }
+    .howToBuyTicket p{
+        font-size: 12px;
+    }
+}

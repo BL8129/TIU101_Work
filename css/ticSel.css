@@ -1,0 +1,527 @@
+@import url('reset.css');
+
+main{
+    max-width: 1440px;
+    min-width: 390px;
+    margin: 0 auto;
+    background-color: #022F40;
+    padding-bottom: 1px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.goHome{
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    z-index: 100;
+}
+
+/* -----------------------導航列----------------------- */
+
+.pageDiv{
+    padding-top: 32px;
+    margin-bottom: 32px;
+    box-sizing: border-box;
+}
+
+.pageSelect{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 70px;
+    display: flex;
+}
+
+.pageSelect a{
+    width: 20%;
+    height: 35px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    white-space: nowrap;
+}
+
+.pageSelect .selected{
+    background-color: #92D2DD;
+    border-radius: 4px 4px 0 0;
+    color: #000;
+}
+
+.pageSelect a:nth-child(1):hover{
+    background-color: #4A818E;
+    border-radius: 4px 4px 0 0;
+}
+.pageSelect a:nth-child(3):hover{
+    background-color: #4A818E;
+    border-radius: 4px 4px 0 0;
+}
+.pageSelect a:nth-child(4):hover{
+    background-color: #4A818E;
+    border-radius: 4px 4px 0 0;
+}
+.pageSelect a:nth-child(5):hover{
+    background-color: #4A818E;
+    border-radius: 4px 4px 0 0;
+}
+
+.outer{
+    display: none;
+}
+
+/* -----------------------主內容----------------------- */
+
+.selContain{
+    padding: 0 70px;
+    box-sizing: border-box;
+}
+
+/* 優惠訊息 */
+.discount{
+    margin-bottom: 48px;
+}
+
+.discount h2{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.discount p{
+    line-height: 17px;
+}
+
+/* 票種選擇 */
+.programName{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.programLittleName{
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 12px;
+    display: none;
+}
+
+.table{
+    display: flex;
+    gap: 4px;
+}
+
+.location{
+    width: 18%;
+}
+
+.location h3{
+    display: block;
+    width: 100%;
+    height: 32px;
+    border-radius: 4px;
+    background-color: #62C1B4;
+    font-size: 16px;
+    color: #000;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.location p{
+    border-bottom: 1px solid white;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+
+}
+
+.date{
+    width: 23%;
+}
+
+.date h3{
+    display: block;
+    width: 100%;
+    height: 32px;
+    border-radius: 4px;
+    background-color: #62C1B4;
+    font-size: 16px;
+    color: #000;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.date p{
+    border-bottom: 1px solid white;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+
+}
+
+.order{
+    width: 50%;
+}
+
+.order h3{
+    display: block;
+    width: 100%;
+    height: 32px;
+    border-radius: 4px;
+    background-color: #62C1B4;
+    font-size: 16px;
+    color: #000;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.ticSel{
+    display: flex;
+    gap: 4px;
+}
+
+.ticSel .bi{
+    color: #ffffff;
+}
+
+.tic{
+    width: 25%;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px, solid, white;
+    line-height: 32px;
+    color: #999999;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+.num{
+    width: 41%;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid white;
+    line-height: 32px;
+    color: #999999;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+.type{
+    width: 17%;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid white;
+    line-height: 32px;
+    color: #999999;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+.people{
+    width: 17%;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid white;
+    line-height: 32px;
+    color: #999999;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+.del{
+    width: 9%;
+}
+
+.del h3{
+    display: block;
+    width: 100%;
+    height: 32px;
+    border-radius: 4px;
+    background-color: #62C1B4;
+    margin-bottom: 6px;
+}
+
+.del p{
+    display: block;
+    background-color: #1E5B63;
+    width: 92%;
+    height: 29px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 32px;
+    margin: 0 auto;
+}
+
+/* 新增購買 */
+.addBtn{
+    margin-top: 32px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.addBtn a{
+    text-decoration: none;
+    color: #EED65A;
+    font-weight: bold;
+}
+
+/* 確定購買 */
+.confirmBtn{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.confirmBtn a{
+    display: block;
+    width: 224px;
+    height: 51px;
+    border-radius: 12px;
+    background-color: #EED65A;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 51px;
+    color: #000;
+}
+
+
+
+
+
+
+
+/* -------------------ticSel RWD------------------ */
+
+/* --- Break 1240px --- */
+@media screen and (max-width: 1240px) {
+    .table{
+        flex-direction: column;
+        align-items: center;
+    }
+    .location{
+        width: 100%;
+    }
+    .date{
+        width: 100%;
+    }
+    .order{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .del h3{
+        display: none;
+    }
+    .del{
+        width: 100%;
+    }
+    .del p{
+        width: 110px;
+        height: 28px;
+        border-radius: 8px;
+        line-height: 30px;
+        margin-right: initial;
+    }
+}
+
+/* --- Break 1024px --- */
+@media screen and (max-width: 1024px) {
+    .pageDiv{
+        padding-top: 24px;
+        margin-bottom: 24px;
+    }
+    .pageSelect{
+        padding: 0 48px;
+    }
+
+    .selContain{
+        padding: 0 48px;
+    }
+
+}
+
+/* --- Break 736px --- */
+@media screen and (max-width: 736px) {
+    .pageDiv{
+        padding-top: 21px;
+        margin-bottom: 21px;
+    }
+    .pageSelect{
+        padding: 0 32px;
+    }
+    .pageSelect a{
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .selContain{
+        padding: 0 21px;
+    }
+
+}
+
+/* --- Break 500px --- */
+@media screen and (max-width: 500px) {
+    .pageDiv{
+        display: none;
+    }
+    .outer{
+        display: block;
+        width: 100%;
+        padding-top: 16px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #1F505F;
+    }
+    .myNav{
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .myNav .swiper-slide{
+        width: auto;
+    }
+    .myNav .swiper-slide:not(:last-child){
+        margin-right: 20px;
+    }
+    .myNav .swiper-slide a{
+        display: block;
+        text-decoration: none;
+        font-size: 14px;
+        color: #ffffff;
+        text-align: left;
+        white-space: nowrap;
+    }
+    .myNav .swiper-slide .selected{
+        border-bottom: 2px solid #92D2DD;
+    }
+
+    .selContain{
+        padding: 0 16px;
+    }
+
+    .discount{
+        margin-bottom: 32px;
+    }
+    .discount h2{
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    .discount p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .programName{
+        display: none;
+    }
+    .programLittleName{
+        display: block;
+    }
+    .table{
+        gap: 0;
+    }
+    .location h3{
+        height: 22px;
+        line-height: 22px;
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    .location p{
+        height: 22px;
+        line-height: 22px;
+        font-size: 12px;
+        border: 0;
+        margin-bottom: 8px;
+    }
+    .date h3{
+        height: 22px;
+        line-height: 22px;
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    .date p{
+        height: 22px;
+        line-height: 22px;
+        font-size: 12px;
+        border: 0;
+        margin-bottom: 8px;
+    }
+    .order h3{
+        height: 22px;
+        line-height: 22px;
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    .ticSel{
+        flex-direction: column;
+        gap: 8px;
+    }
+    .tic{
+        width: 100%;
+        height: 22px;
+        font-size: 12px;
+        line-height: 22px;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px solid #ffffff;
+    }
+    .num{
+        width: 100%;
+        height: 22px;
+        font-size: 12px;
+        line-height: 22px;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px solid #ffffff;
+    }
+    .type{
+        width: 100%;
+        height: 22px;
+        font-size: 12px;
+        line-height: 22px;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px solid #ffffff;
+    }
+    .people{
+        width: 100%;
+        height: 22px;
+        font-size: 12px;
+        line-height: 22px;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .addBtn{
+        margin: 48px 0;
+    }
+    .addBtn a{
+        font-size: 12px;
+    }
+
+    .confirmBtn{
+        margin-bottom: 48px;
+    }
+    .confirmBtn a{
+        width: 174px;
+        height: 29px;
+        border-radius: 8px;
+        font-size: 14px;
+        line-height: 29px;
+    }
+}

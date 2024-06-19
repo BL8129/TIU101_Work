@@ -1,0 +1,419 @@
+@import url('reset.css');
+
+main{
+    max-width: 1440px;
+    min-width: 390px;
+    margin: 0 auto;
+    background-color: #022F40;
+}
+
+.goHome{
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    z-index: 100;
+}
+
+/* -----------------------導航列----------------------- */
+
+.pageDiv{
+    padding-top: 32px;
+    margin-bottom: 32px;
+    box-sizing: border-box;
+}
+
+.pageSelect{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 70px;
+    display: flex;
+}
+
+.pageSelect a{
+    width: 20%;
+    height: 35px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    white-space: nowrap;
+}
+
+.pageSelect .selected{
+    background-color: #92D2DD;
+    border-radius: 4px 4px 0 0;
+    color: #000;
+}
+
+.pageSelect a:nth-child(2):hover{
+    background-color: #4A818E;
+    border-radius: 4px 4px 0 0;
+}
+.pageSelect a:nth-child(3):hover{
+    background-color: #4A818E;
+    border-radius: 4px 4px 0 0;
+}
+.pageSelect a:nth-child(4):hover{
+    background-color: #4A818E;
+    border-radius: 4px 4px 0 0;
+}
+.pageSelect a:nth-child(5):hover{
+    background-color: #4A818E;
+    border-radius: 4px 4px 0 0;
+}
+
+.outer{
+    display: none;
+}
+
+/* -----------------------廣告區----------------------- */
+
+.mySwiper{
+    width: 100%;
+    height: 436px;
+    background-color: #2B5862;
+    margin-bottom: 48px;
+}
+
+.mySwiper .swiper-slide{
+    width: 726px;
+    height: 420px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.mySwiper .swiper-slide img{
+    display: block;
+    width: 726px;
+    height: 420px;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+:root{
+    --swiper-theme-color: #ffffff;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    width: 48px;
+    height: 48px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    display: block;
+    font-size: 26px;
+    background-color: #000;
+    opacity: .7;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    line-height: 48px;
+    text-align: center;
+
+}
+
+/* -----------------------電影小卡區----------------------- */
+
+.cards{
+    padding-bottom: 1px;
+}
+
+.text{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+.text h1{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.text a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.myList{
+    width: 100%;
+    padding: 0 70px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+.myList .swiper-wrapper{
+    width: 100%;
+}
+
+.myList .swiper-slide{
+    width: 240px;
+}
+
+.myList .swiper-slide:not(:last-child){
+    margin-right: 24px;
+}
+
+.myList .swiper-slide a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #2B5862;
+    border-radius: 16px;
+}
+
+.myList .swiper-slide img{
+    border-radius: 16px 16px 0 0;
+}
+
+.cardText{
+    width: 240px;
+    height: 120px;
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardText h2{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.cardText h3{
+    font-size: 12px;
+}
+
+.cardText h4{
+    font-size: 14px;
+}
+
+
+
+
+
+/* -------------------index RWD------------------ */
+
+/* --- Break 1024px --- */
+@media screen and (max-width: 1024px) {
+    .pageDiv{
+        padding-top: 24px;
+        margin-bottom: 24px;
+    }
+    .pageSelect{
+        padding: 0 48px;
+    }
+
+    .mySwiper {
+        height: 352px;
+        margin-bottom: 38px;
+    }
+    .mySwiper .swiper-slide {
+        width: 592px;
+        height: 342px;
+        margin-top: 5px;
+        margin-right: 16px;
+    }
+    .mySwiper .swiper-slide img {
+        width: 592px;
+        height: 342px;
+        border-radius: 15px;
+    }
+
+    .text{
+        padding: 0 48px;
+        margin-bottom: 14px;
+    }
+    .myList{
+        padding: 0 48px;
+        margin-bottom: 45px;
+    }
+    .myList .swiper-slide{
+        width: 208px;
+    }
+    .myList .swiper-slide:not(:last-child){
+        margin-right: 16px;
+    }
+    .myList .swiper-slide a{
+        width: 208px;
+        border-radius: 14px;
+    }
+    .myList .swiper-slide img{
+        width: 208px;
+        border-radius: 14px 14px 0 0;
+    }
+    .cardText{
+        width: 208px;
+        height: 105px;
+        padding: 10px;
+    }
+    .cardText h2{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .cardText h3{
+        font-size: 11px;
+    }
+    .cardText h4{
+        font-size: 12px;
+    }
+}
+
+/* --- Break 736px --- */
+@media screen and (max-width: 736px) {
+    .pageDiv{
+        padding-top: 21px;
+        margin-bottom: 21px;
+    }
+    .pageSelect{
+        padding: 0 32px;
+    }
+    .pageSelect a{
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .mySwiper {
+        height: 288px;
+        margin-bottom: 31px;
+    }
+    .mySwiper .swiper-slide {
+        width: 491px;
+        height: 284px;
+        margin-top: 2px;
+        margin-right: 8px;
+    }
+    .mySwiper .swiper-slide img {
+        width: 491px;
+        height: 284px;
+        border-radius: 7px;
+    }
+
+    .text{
+        padding: 0 32px;
+        margin-bottom: 13px;
+    }
+    .text h1{
+        font-size: 17px;
+    }
+    .text a{
+        font-size: 13px;
+    }
+
+    .myList{
+        padding: 0 32px;
+        margin-bottom: 32px;
+    }
+    .myList .swiper-slide{
+        width: 176px;
+    }
+    .myList .swiper-slide:not(:last-child){
+        margin-right: 8px;
+    }
+    .myList .swiper-slide a{
+        width: 176px;
+        border-radius: 12px;
+    }
+    .myList .swiper-slide img{
+        width: 176px;
+        border-radius: 12px 12px 0 0;
+    }
+    .cardText{
+        width: 176px;
+        height: 90px;
+        padding: 8px;
+    }
+    .cardText h2{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .cardText h3{
+        font-size: 10px;
+    }
+    .cardText h4{
+        font-size: 10px;
+    }
+}
+
+/* --- Break 500px --- */
+@media screen and (max-width: 500px) {
+    .pageDiv{
+        display: none;
+    }
+    .outer{
+        display: block;
+        width: 100%;
+        padding-top: 16px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #1F505F;
+    }
+    .myNav{
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .myNav .swiper-slide{
+        width: auto;
+    }
+    .myNav .swiper-slide:not(:last-child){
+        margin-right: 20px;
+    }
+    .myNav .swiper-slide a{
+        display: block;
+        text-decoration: none;
+        font-size: 14px;
+        color: #ffffff;
+        text-align: left;
+        white-space: nowrap;
+    }
+    .myNav .swiper-slide .selected{
+        border-bottom: 2px solid #92D2DD;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        display: none;
+    }
+
+    .mySwiper {
+        height: 225px;
+        margin-bottom: 24px;
+    }
+    .mySwiper .swiper-slide {
+        width: 390px;
+        height: 225px;
+        margin: 0;
+    }
+    .mySwiper .swiper-slide img {
+        width: 390px;
+        height: 225px;
+        border-radius: 0px;
+    }
+
+    .text{
+        padding: 0 16px;
+        margin-bottom: 12px;
+    }
+    .text h1{
+        font-size: 16px;
+    }
+    .text a{
+        font-size: 12px;
+    }
+
+    .myList{
+        padding: 0 16px;
+    }
+}
