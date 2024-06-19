@@ -28,7 +28,6 @@ header .wrapper{
     height: 368px;
     display: flex;
     justify-content: end;
-    z-index: 100;
 }
 
 
@@ -39,6 +38,7 @@ header .wrapper{
     border-radius: 0 0 0 12px;
     padding: 16px 0;
     box-sizing: border-box;
+    z-index: 101;
 
 }
 
