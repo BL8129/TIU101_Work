@@ -116,9 +116,6 @@ main{
     justify-content: space-between;
 }
 
-.text01 p{}
-
-
 .text02{
     height: 314px;
     display: flex;
@@ -126,13 +123,9 @@ main{
     justify-content: space-between;
 }
 
-.text02 p{}
-
 .text03{
     display: flex;
 }
-
-.text03 p{}
 
 .price{
     color: red;
@@ -189,6 +182,7 @@ main{
 
 /* 介紹選單 */
 .detialMenu{
+    display: flex;
     padding: 16px 0;
     box-sizing: border-box;
     margin-bottom: 24px;
@@ -200,10 +194,24 @@ main{
 }
 
 .detialMenu a{
-    margin-right: 40px;
+    display: block;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #333333;
+    line-height: 40px;
+    text-align: center;
     text-decoration: none;
     font-size: 16px;
     color: #ffffff;
+}
+
+.detialMenu a:not(:last-child){
+    margin-right: 16px;
+}
+
+.detialMenu a:hover{
+    background-color: #666666;
 }
 
 /* 劇情簡介 */
@@ -219,9 +227,11 @@ main{
     margin-bottom: 32px;
 }
 
-.contain p{
+.contain_p{
     line-height: 24px;
+    margin: 0 auto;
     margin-bottom: 32px;
+    width: 960px;
 }
 
 .video{
@@ -235,19 +245,25 @@ main{
     height: 405px;
 }
 
+.crewAll{
+    display: flex;
+    justify-content: center;
+    width: 960px;
+    margin: 0 auto;
+}
+
 .crew01{
     line-height: 24px;
-    margin-bottom: 32px;
+    flex-grow: 1;
 }
 
 .crew01 h3{
     font-size: 16px;
 }
 
-.crew01 p{}
-
 .crew02{
     line-height: 24px;
+    flex-grow: 1;
 }
 
 .crew02 h3{
@@ -273,6 +289,8 @@ main{
 
 .about p{
     line-height: 24px;
+    margin: 0 auto;
+    width: 960px;
 }
 
 /* 網友期待度 */
@@ -339,8 +357,6 @@ main{
     line-height: 33px;
 }
 
-.ratings2{}
-
 .star02 a{
     display: block;
     text-align: center;
@@ -368,6 +384,8 @@ main{
 
 .howToUseTicket p{
     line-height: 24px;
+    margin: 0 auto;
+    width: 960px;
 }
 
 /* 購票須知 */
@@ -385,6 +403,8 @@ main{
 
 .howToBuyTicket p{
     line-height: 24px;
+    margin: 0 auto;
+    width: 960px;
 }
 
 
@@ -393,6 +413,25 @@ main{
 
 
 /* -------------------program RWD------------------ */
+
+/* --- Break 1100px --- */
+@media screen and (max-width: 1100px) {
+    .contain_p{
+        width: auto;
+    }
+    .crewAll{
+        width: auto;
+    }
+    .about p{
+        width: auto;
+    }
+    .howToUseTicket p{
+        width: auto;
+    }
+    .howToBuyTicket p{
+        width: auto;
+    }
+}
 
 /* --- Break 1024px --- */
 @media screen and (max-width: 1024px) {
@@ -472,17 +511,33 @@ main{
 @media screen and (max-width: 600px) {
     .detialMenu{
         padding: 8px 0;
-        display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 32px;
+        justify-content: start;
+        margin-bottom: 24px;
     }
     .detialMenu a{
         margin: 0;
-        text-align: center;
-        width: 33%;
-        line-height: 24px;
         font-size: 14px;
+
+        height: 36px;
+        line-height: 36px;
+        border-radius: 4px;
+        width: 32%;
+
+    }
+    .detialMenu a:not(:last-child){
+        margin: 0;
+    }
+
+    .detialMenu a:not(:nth-child(3)){
+        margin-right: 2%;
+        margin-bottom: 8px;
+    }
+    .crewAll{
+        flex-direction: column;
+    }
+    .crew01{
+        margin-bottom: 32px;
     }
 }
 
@@ -578,19 +633,21 @@ main{
         font-size: 16px;
         margin-bottom: 16px;
     }
-    .contain p{
+    .contain_p{
         font-size: 12px;
         margin-bottom: 16px;
     }
     .video{
         margin-bottom: 16px;
     }
+    .crew01{
+        margin-bottom: 16px;
+    }
     .crew01 h3{
         font-size: 14px;
     }
-    .contain p{
+    .crew01 p{
         font-size: 12px;
-        margin-bottom: 16px;
     }
     .crew02 h3{
         font-size: 14px;
